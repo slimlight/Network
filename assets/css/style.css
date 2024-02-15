@@ -1,0 +1,151 @@
+:root{
+    /* button color */
+    --main-color: #2CB57F;
+    /* button size */
+    --main-width: 104px;
+    --main-height: 44px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+}
+/* scrollbar start */
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #888; 
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* scrollbar end */
+
+/* navbar start */
+.navbar-nav > .btn{
+    width: var(--main-width);
+    height: var(--main-height);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* navbar end */
+
+/* section start */
+
+#bground{
+    width: 100%;
+    height: auto;
+    background-image: url(./img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bground .content{
+    padding-top: 260px;
+    margin-left: 120px;
+}
+
+#bground .content h1{
+    font-weight: 600;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.content > .btn{
+    width: calc(var(--main-width) + 44px);
+    height: calc(var(--main-height) + 6px);
+    margin-top: 60px;
+    margin-left: 20px;
+    background-color: var(--main-color);
+}
+
+.content > .btn:nth-child(3) {
+    background-color: transparent;
+    border-color: var(--main-color);
+    color: white;
+}
+
+.content > .btn:hover:nth-child(3){
+    background-color: var(--main-color);
+}
+
+.content > .frame{
+    padding-top: 320px;
+    padding-left: 45%;
+}
+    
+
+
+@media screen and (max-width: 430px){
+    #bground{
+        background-image: url(./img/image2.png);
+    }
+    #bground .content{
+        padding-top: 270px;
+        margin-left: 10px;
+    }
+    .content > .btn{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 431px){
+    #bground{
+        background-image: url(./img/image.png);
+    }
+
+}
+/* sectiond end */
+
+/* card start */
+
+ 
+.cards .btn{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    width: calc(var(--main-width) + 140px);
+}
+.cards .colorcard{
+    background-color: #F5F5F5;
+}
+
+.cards p{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+/* card end */
+
+/* box start */
+.bgcolor{
+    background-color:#580E16;
+}
+.textcolor{
+    color: #F8D3D7;
+}
+
+.box-section{
+    background-color:#580E16;
+    width: 957px;
+    height: 700px;
+    padding-top: 20rem;
+}
+
+
+/* box end */
+
+
+ 
